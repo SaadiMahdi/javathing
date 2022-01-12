@@ -24,7 +24,7 @@ clients.add(new Client("Saadi","Mahdi",1325647,"22072002","El Achour"));
 clients.add(new Client("Oussadi","Maria",2547869,"12345698","idk"));
 clients.add(new Client("Eren","Jager",142536,"freedom","Paradise Island"));
 clients.add(new Client("Gon","Freecss",417852,"myfatherisgone","Whale Island"));
-this.DBC=clients ;
+this.DBC=clients;
 }
 
 
@@ -32,15 +32,15 @@ this.DBC=clients ;
 
 
   public CompteClient Login(String nom ,String prenom,String mdp){
-
-    for(int i=0;i<DBC.size();i++){
-         
+    for(int i=0;i<DBC.size();i++){   
               if(nom==DBC.get(i).getnom() && prenom==DBC.get(i).getprenom() && DBC.get(i).getmdp()==mdp){ 
                     return DB_client.get(i);
               }  
       }
      return null;
   }
+
+
 
    public CompteClient search(int ref){
        for(int i=0; i<DB_client.size();i++){
@@ -71,6 +71,5 @@ public static void main(String[] args){
     }else{
         System.out.println("pfff");
     }
-     
 }
 }

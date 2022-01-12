@@ -5,6 +5,7 @@ public class Client{
     private String nom;
     private String prenom;
     private int refc;
+    private String mdp ;
     private String adresse;
 
     
@@ -14,10 +15,11 @@ public class Client{
         return "nom"+this.getnom+"prenom"+this.getprenom+" ref"+this.getref+" adresse"+this.getadresse;
     }*/
     
-    public Client(String nom,String prenom,int refc, String adresse){
+    public Client(String nom,String prenom,int refc,String mdp ,String adresse){
         this.nom = nom;
         this.prenom = prenom;
         this.refc = refc;
+        this.mdp = mdp;
         this.adresse = adresse;
     }
 
@@ -37,6 +39,10 @@ public class Client{
         return refc;
     }
 
+    public String getmdp(){
+        return mdp;
+    }
+
     public String getadresse() {
         return adresse;
     }
@@ -46,13 +52,11 @@ public class Client{
     }
       
 
-   /* public CompteClient recherche(int refc){
-        
-    }
+   
 
 
 
-     public void Affcompte(int refc){
+     /*public void Affcompte(int refc){
 
          CompteClient compte = new CompteClient();
 

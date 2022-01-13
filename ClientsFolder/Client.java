@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class Client{
@@ -50,22 +51,23 @@ public class Client{
     public Client getClient() {
         return Client;
     }
+
+    
+  public CompteClient Login(String nom ,String prenom,String mdp){
+    for(int i=0;i<DBC.size();i++){   
+              if(nom==DBC.get(i).getnom() && prenom==DBC.get(i).getprenom() && DBC.get(i).getmdp()==mdp){ 
+                    return DB_client.get(i);
+              }  
+      }
+     return null;
+  }
       
 
    
 
 
 
-     /*public void Affcompte(int refc){
-
-         CompteClient compte = new CompteClient();
-
-         for(int i=0;i<clients.size();i++){
-             if(clients.get(i).getref().equals(refc)){
-                //compte.AfficheCompte();
-                System.out.println("its here");
-             }
-         }*/
+    
 
 
 

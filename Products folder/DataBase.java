@@ -56,13 +56,13 @@ public class DataBase {
         stock.categories.add(Electromenager);
 
         String[] caracteristics3 = new String[]{"55555", "g5kg", "kob"};
-        Electromenager.products.add(new Product("uki", 1455, "ggggg",caracteristics3, 1520, 10));
+        Electromenager.products.add(new Product("uko", 1455, "ggggg",caracteristics3, 1520, 10));
 
         //Kts scolaires
         stock.categories.add(Kits_scolaires);
 
         String[] caracteristics4 = new String[]{"aaaas", "scsdf", "cxvv"};
-        Kits_scolaires.products.add(new Product("uki", 1475, "ggggg",caracteristics4, 1422, 22));
+        Kits_scolaires.products.add(new Product("uka", 1475, "ggggg",caracteristics4, 1422, 22));
 
         this.DB_stock = stock;
 

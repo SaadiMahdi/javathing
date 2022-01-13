@@ -4,9 +4,9 @@ import java.util.ArrayList;
 public class DataBase {
 
     Stock DB_stock = new Stock();
-    Rebrique rebrique1 = new Rebrique("Rebrique 01");
-    Rebrique rebrique2 = new Rebrique("Rebrique 02");
-    Rebrique rebrique3 = new Rebrique("Rebrique 03");
+    Rebrique rebrique1 = new Rebrique("Rebrique 01", 0);
+    Rebrique rebrique2 = new Rebrique("Rebrique 02", 0);
+    Rebrique rebrique3 = new Rebrique("Rebrique 03", 0);
 
     public Stock getStock(){
         return this.DB_stock;
@@ -26,9 +26,9 @@ public class DataBase {
 
         Stock stock = new Stock();
 
-        Rebrique reb1= new Rebrique("Rebrique 01");
-        Rebrique reb2= new Rebrique("Rebrique 02");
-        Rebrique reb3= new Rebrique("Rebrique 03");
+        Rebrique reb1= new Rebrique("Rebrique 01",0);
+        Rebrique reb2= new Rebrique("Rebrique 02", 0);
+        Rebrique reb3= new Rebrique("Rebrique 03", 0);
 
         //Categorie informatique
         stock.categories.add(Informatique);
@@ -126,6 +126,26 @@ public class DataBase {
         }
         return null;
     }
+
+    public Rebrique search_Rebrique_DB(int ref){
+        for (Product pr : this.rebrique1){
+            if(pr.ref == ref){
+                return rebrique1;
+            }
+        }
+        for (Product pr : this.rebrique2){
+            if(pr.ref == ref){
+                return rebrique2;
+            }
+        }
+        for (Product pr : this.rebrique3){
+            if(pr.ref == ref){
+                return rebrique3;
+            }
+        }
+        return null;
+    }
+
     
 
 

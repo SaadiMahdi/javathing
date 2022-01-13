@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "javathing",
+			"path": ".."
+		},
+		{
+			"name": "TheRealDeal",
+			"path": "..\\..\\Gestion-Stock-Electronics-Store\\TheRealDeal"
+		}
+	],
+	"settings": {
+		"java.project.sourcePaths": []
+	}
+}
